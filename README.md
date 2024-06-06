@@ -52,7 +52,7 @@ This project has pre-built Docker images for every aspect.
 * Then, clone this repository.
 
   ```bash
-  git clone https://github.com/calcium-webapp/calcium && cd core
+  git clone https://github.com/calcium-webapp/calcium.git && cd core
   ```
 
 * Create a `.env` file and specify all the environment variables needed in the `docker-compose.yml` file, for example:
@@ -72,6 +72,12 @@ This project has pre-built Docker images for every aspect.
 ## Deploy the website of the project
 
 * Ensure Docker is installed
+
+* Then, clone this repository.
+
+  ```bash
+  git clone https://github.com/calcium-webapp/calcium.git && cd web
+  ```
 
 * Create a `.env` file and specify all the environment variables needed in the `docker-compose.yml` file, for example:
 
