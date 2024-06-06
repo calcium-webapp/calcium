@@ -4,15 +4,28 @@ services:
     ports:
       - "3000:3000"
     environment:
-      # openssl string
+      # This secret can be generated on Linux with the command:
+      # openssl rand -base64 32
       - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
-      # if you want SSO sign-in
+
+      # Put your DOMAIN NAME here
+      - NEXTAUTH_URL=${NEXTAUTH_URL}
+      
+      # These URLs must point to the backend instances running
+      - USERS_DB_URL=${USERS_DB_URL}
+      - CONTAINERS_API_URL=${CONTAINERS_API_URL}
+
+      # Make an account here: https://liveblocks.io/
+      # Then, go to Dashboard > Production > API keys
+      # and copy the secret key here:
+      - LIVEBLOCKS_SECRET_KEY=${LIVEBLOCKS_SECRET_KEY}
+
+      # === OPTIONAL ===
+      # Allow people to sign in using Google/Github
+      # Follow the instruction here:
+      # Google: https://next-auth.js.org/providers/google
+      # Github: https://next-auth.js.org/providers/github
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
       - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
       - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
       - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
-      # core connection
-      - USERS_DB_URL=${USERS_DB_URL}
-      - CONTAINERS_API_URL=${CONTAINERS_API_URL}
-      # liveblocks
-      - LIVEBLOCKS_SECRET_KEY=${LIVEBLOCKS_SECRET_KEY}

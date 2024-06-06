@@ -39,6 +39,64 @@ With Calcium, you can:
 
 By harnessing the power of real-time collaboration, Calcium empowers development teams to work more efficiently, innovate faster, and deliver high-quality software solutions.
 
+# Deployment (how to execute)
+
+Currently, this app requires significant computational resources. You will an instance of minimun **4 cores** and **8 GB RAM**.
+
+This project has pre-built Docker images for every aspect.
+
+## Deploy the core of the project
+
+* First, install Docker on an instance that meets the minimun requirements. You'll need to find instructions online on how to install Docker for you specific OS.
+
+* Then, clone this repository.
+
+  ```bash
+  git clone https://github.com/calcium-webapp/calcium && cd core
+  ```
+
+* Create a `.env` file and specify all the environment variables needed in the `docker-compose.yml` file, for example:
+
+  ```.env
+  ...
+  PORT=4000
+  ...
+  ```
+
+* Create the containers and run the backend with:
+
+  ``` bash
+  docker compose up -d
+  ```
+
+## Deploy the website of the project
+
+* Ensure Docker is installed
+
+* Create a `.env` file and specify all the environment variables needed in the `docker-compose.yml` file, for example:
+
+  ```.env
+  ...
+  PORT=4000
+  ...
+  ```
+
+  Read the `docker-compose.yml` carefully because it contains an explain on how each environment variable is used and how it works.
+
+* Create the containers and run the frontend with:
+
+  ``` bash
+  docker compose up -d
+  ```
+
+## ⚠️ "After deployment, the app doesn't work because [...]"
+
+Even if the app is correctly set up and running, you will need a **DOMAIN NAME** and **SSL certificates** pointing to the IP address of the backend instance. As you might guess, you will yo set up a proxy by yourself (and no, we cannot do that for you because automating this process is very dangerous if done incorrectly and requires a lot of knowledge).
+
+We also acknowledge that creating accounts for the APIs to work in some cases can be bothersome and not worth the hassle, in such case we already did this process for you:
+
+[Here is a deployment already done and working 24/7](https://calcium-webapp.vercel.app/).
+
 # Usage
 
 First access the following [link](https://calcium-webapp.vercel.app/).
