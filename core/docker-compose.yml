@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:16.0
+    container_name: calciumdb
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 5432:5432
+    networks:
+      - service-api-calcium
+
+  my-service-production:
+    container_name: calciumapi-production-service
+    image: ghcr.io/calcium-webapp/calcium-web-backend:latest
+    env_file: .env
+    ports:
+      - "${PORT}:${PORT}"
+    depends_on:
+      - postgres
+    networks:
+      - service-api-calcium
+
+  calciumapi-production:
+    container_name: ghcr.io/calcium-webapp/calcium-api:latest
+    env_file: .env
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - service-api-calcium
+
+networks:
+  service-api-calcium:
+    external: true

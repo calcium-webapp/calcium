@@ -1,0 +1,18 @@
+services:
+  web:
+    image: ghcr.io/calcium-webapp/web:latest
+    ports:
+      - "3000:3000"
+    environment:
+      # openssl string
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      # if you want SSO sign-in
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET}
+      # core connection
+      - USERS_DB_URL=${USERS_DB_URL}
+      - CONTAINERS_API_URL=${CONTAINERS_API_URL}
+      # liveblocks
+      - LIVEBLOCKS_SECRET_KEY=${LIVEBLOCKS_SECRET_KEY}
