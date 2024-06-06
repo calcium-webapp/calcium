@@ -1,7 +1,15 @@
+<div align="center">
+
+  <img src="./assets/logo-git.png" alt="Description of image" width="300">
+
+<hr>
+
 ![image](https://img.shields.io/badge/microsoft%20azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white) ![image](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) ![image](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![image](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white) ![image](https://img.shields.io/badge/fastify-202020?style=for-the-badge&logo=fastify&logoColor=white) ![image](https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white) ![image](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![image](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![image](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
 
 [![calcium](https://github.com/calcium-webapp/calcium/assets/82924017/17e0961f-4a62-4399-ba1f-7291985af11e)](https://calcium-webapp.vercel.app/)
+
+</div>
 
 **Calcium is a real-time collaborator code editor for active brainstorming.**
 
@@ -37,15 +45,22 @@ First access the following [link](https://calcium-webapp.vercel.app/).
 
 After you have successfully logged in you will be redirected to *My boards* where existing boards will show up as shown below.
 
+<div align="center">
+
 ![image](https://github.com/calcium-webapp/calcium/assets/82924017/2612c223-43c4-405d-b448-ad8d37cf6ee1)
 
+</div>
 Boards are the heart of Calcium. Here you will provided with a whiteboard for drawing, expressing ideas, composing diagrams etc. In addition, your board comes with a terminal and text-editor packed.
 
 ## Creating a board
 
 Firstly, click on the + button on the bottom left side of the screen and the following window will pop up.
 
+<div align="center">
+
 ![image](https://github.com/calcium-webapp/calcium/assets/82924017/89c8d45c-d369-4f44-8133-929669b0f8b6)
+
+</div>
 
 As it can be seen, a random name is generated you can choose whether change or keep it. Furthermore, you may select desired runtime.
 
@@ -53,20 +68,31 @@ As it can be seen, a random name is generated you can choose whether change or k
 
 Once created you will be displayed with a board like shown below! Now feel free to collaborate and invite colleagues to code
 
+<div align="center">
+
 ![image](https://github.com/calcium-webapp/calcium/assets/82924017/86d837cf-fd2f-446b-a4b9-7699641e2c86)
+
+</div>
 
 ## Sharing my room
 
 Click on share and the following window will be prompted. Now share the link and that is you are rolling with calcium!.
 
+<div align="center">
+
 ![image](https://github.com/calcium-webapp/calcium/assets/82924017/67c46b2b-133e-43f0-93a0-a010c7aacf6d)
+
+</div>
 
 ## Deleting a board
 
 In My boards you will be able to delete a board clicking the three dots
 
+<div align="center">
+
 ![image](https://github.com/calcium-webapp/calcium/assets/82924017/1db269d6-2533-452d-a41a-068e6a300419)
 
+</div>
 
 # Future Functionalities
 ### File System
